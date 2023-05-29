@@ -2,19 +2,32 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.jqassistant.plugin</groupId>
-  <artifactId>jqassistant-pmd-plugin</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
-
-  <name>jqassistant-pmd-plugin</name>
-  <url>http://maven.apache.org</url>
-
   <parent>
     <groupId>org.jqassistant.plugin</groupId>
     <artifactId>parent</artifactId>
     <version>2.0.0-M2</version>
   </parent>
+
+  <artifactId>jqassistant-pmd-plugin</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>JQAssistant PMD Plugin</name>
+  <url>http://maven.apache.org</url>
+
+  <developers>
+    <developer>
+      <id>moritz.pfluegner</id>
+      <name>Moritz Pflügner</name>
+      <email>moritz.pfluegner@buschmais.com</email>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/jqassistant-plugin/jqassistant-github-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/jqassistant-plugin/jqassistant-github-plugin.git</developerConnection>
+    <url>https://github.com/jqassistant-plugin/jqassistant-github-plugin</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,8 +78,6 @@
       <artifactId>pmd-java</artifactId>
       <version>6.55.0</version>
     </dependency>
-
-
     <!-- Test dependencies -->
     <dependency>
       <groupId>com.buschmais.jqassistant.neo4j</groupId>
